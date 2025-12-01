@@ -16,4 +16,8 @@ class Hold extends Model
         'status',
         'expires_at',
     ];
+
+    protected $casts = [
+        'expires_at' => 'datetime',
+    ];
 }

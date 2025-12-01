@@ -23,8 +23,7 @@ class StockService
                 ->where('status', 'paid')
                 ->sum('qty');
 
-            //@todo check if this formula is correct or not
-            $available = (int) (($product->stock + $activeHoldsQty) - $paidOrderQty);
+            $available = (int) ($product->stock - $activeHoldsQty - $paidOrderQty);
 
             return max(0, $available);
         });
