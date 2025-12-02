@@ -15,4 +15,8 @@ class Payment extends Model
         'payload',
         'status',
     ];
+
+    protected $casts = [
+        'payload' => 'array',
+    ];
 }
