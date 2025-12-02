@@ -24,20 +24,20 @@ php artisan key:generate
 ```
 
 2. **Configure database**
-- Set `DB_CONNECTION`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD` in `.env`.
-- Optionally configure `CACHE_DRIVER` (e.g. `file`, `database`, `redis`).
+   - Set `DB_CONNECTION`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD` in `.env`.
+   - Optionally configure `CACHE_DRIVER` (e.g. `file`, `database`, `redis`).
 
 3. **Migrate and seed**
 
-`php artisan migrate --seed`
+    `php artisan migrate --seed`
 
-The seeder creates a sample product with finite stock and price.
+    The seeder creates a sample product with finite stock and price.
 
 4. **Run the server**
 
-`php artisan serve`
+    `php artisan serve`
 
-API base URL: `http://127.0.0.1:8000`.
+    API base URL: `http://127.0.0.1:8000`.
 
 ## Main endpoints
 
