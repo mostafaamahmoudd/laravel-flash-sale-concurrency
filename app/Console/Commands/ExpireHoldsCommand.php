@@ -25,6 +25,7 @@ class ExpireHoldsCommand extends Command
 
     public function __construct(protected StockService $service)
     {
+        parent::__construct();
     }
 
     /**
